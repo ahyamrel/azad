@@ -1,4 +1,4 @@
-# azgoods
+# azad
 
 An Azure Active Directory module gathering useful scripts.
 
