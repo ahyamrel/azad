@@ -17,11 +17,10 @@ $CurrentValue = [Environment]::GetEnvironmentVariable("PSModulePath", "Machine")
 ```
 4. Import Powershell Module (As Administrator):
 ```powershell
-    $CurrentValue = [Environment]::GetEnvironmentVariable("PSModulePath", "Machine")
-    [Environment]::SetEnvironmentVariable("PSModulePath", $CurrentValue + [System.IO.Path]::PathSeparator + "C:\Program Files\Fabrikam\Modules", "Machine")
+Import-Module .\azad.psm1 
 ```
 
 ## Cmdlets list
 
 - AAD Syncronization commands
-    - *Sync-UserDomain* Syncronize user domains (that not linked AAD) to passed domain if verified in tenant.
+    - ***Sync-UserDomain*** Syncronize user domains (that not linked AAD) to passed domain if verified in tenant.
